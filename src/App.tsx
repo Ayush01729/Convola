@@ -359,24 +359,11 @@ function App() {
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white transition-colors">Features</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+                <li><a href="#" className="hover:text-white transition-colors" onClick={() => setShowContact(true)}>Contact</a></li>
               </ul>
             </div>
-            <div>
-              <h3 className="font-bold text-lg mb-4">Legal</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-4">Connect</h3>
-              <div className="flex space-x-4">
-                <a href="#" className="hover:text-primary-400 transition-colors"><Twitter className="w-6 h-6" /></a>
-                <a href="#" className="hover:text-primary-400 transition-colors"><Linkedin className="w-6 h-6" /></a>
-                <a href="#" className="hover:text-primary-400 transition-colors"><Github className="w-6 h-6" /></a>
-              </div>
-            </div>
+            
+            
           </div>
           <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
             <p>© {new Date().getFullYear()} Convola. All rights reserved.</p>
