@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MessageCircle, Calendar, Clock, Puzzle, ArrowRight, Star, UserCheck, MessageSquareMore, Handshake, DollarSign, Github, Twitter, Linkedin } from 'lucide-react';
+import { MessageCircle, Calendar, Clock, Puzzle, ArrowRight, Star, UserCheck, MessageSquareMore, Handshake, DollarSign , Bot, BrainCircuit  } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 
@@ -30,6 +30,26 @@ const features = [
     icon: <Puzzle className="w-8 h-8 text-primary-500" />,
     title: "Easy Integration",
     description: "Plug & play setup — no tech skills needed. Easily integrates with your website, landing pages & other tools."
+  },
+  {
+    icon: <Bot className="w-8 h-8 text-primary-500" />,
+    title: "Train Your Bot",
+    description: "We'll train your bot with your own data, FAQs, and resources to ensure it provides accurate and relevant information."
+  },
+  {
+    icon: <DollarSign className="w-8 h-8 text-primary-500" />,
+    title: "Conversion Focused",
+    description: 'We don’t make vague chatbots, instead we create Chatbots finetuned to your business, focusing on converting clients'
+  },
+  {
+    description:'We use multiple models - GPT-4, Claude, and others to ensure your bot is always up to date with the latest technology.',
+    icon: <BrainCircuit className="w-8 h-8 text-primary-500" />,
+    title: "Multiple AI Models",
+  },
+  {
+    description: 'We will setup a demo for you to see how your bot will look and feel before you start.',
+    icon: <Handshake className="w-8 h-8 text-primary-500" />,
+    title: "Free Demo",
   }
 ];
 
@@ -65,7 +85,7 @@ const testimonials = [
   },
   {
     quote: "This AI chat feels so real — my website finally converts!",
-    author: "Rahul",
+    author: "Dhruv",
     role: "Finance Mentor",
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&h=100"
   }
